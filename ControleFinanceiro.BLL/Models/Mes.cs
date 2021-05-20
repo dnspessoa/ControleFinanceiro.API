@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace ControleFinanceiro.BLL.Models
 {
-    public class Tipo
+    public class Mes
     {
-        public int TipoId { get; set; }
+        public int MesId { get; set; }
 
         public string Nome { get; set; }
 
-        //Tipo tem Categoria
-        public virtual ICollection<Categoria> Categorias { get; set; }
+        public virtual ICollection<Ganho> Ganhos { get; set; }
+
+        public virtual ICollection<Despesa> Despesas { get; set; }
     }
 }
