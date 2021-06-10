@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ControleFinanceiro.BLL.Models
 {
-    public class Usuario : IdentityRole<string>
+    public class Usuario : IdentityUser<string>
     {
         public string CPF { get; set; }
 
